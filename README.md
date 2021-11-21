@@ -99,9 +99,9 @@ Name은 "?" 문자로 설정
 - 참고
 <img src="https://user-images.githubusercontent.com/94741432/142766149-9b21e084-ba4c-4d94-8f70-764c36e75602.png" width="30%" heigth="30%">
 
-sed는 InputStream으로 파일의 내용을 가져와 Pattern 버퍼에 그 내용을 담고 있으며 데이터의 변형과 추가를 위해 다시 임시 버퍼를 사용함 ->Hold 버퍼
+sed 명령어는 InputStream으로 파일의 내용을 가져와 Pattern Space(패턴버퍼)에 그 내용을 담고 있으며 데이터의 변형과 추가를 위해 다시 임시 버퍼를 사용함 ->Hold Space(홀드버퍼)
 
-작업이 전부 완료되면 Pattern 버퍼에 내용이 담기고, 그 내용을 OutputStream으로 보내줌
+작업이 전부 완료되면 Pattern Space(패턴버퍼)에 내용이 담기고, 그 내용을 OutputStream으로 보내줌
 
 그 후, 원하는 결과가 출력됨. 기본적으로 OutputStream은 콘솔화면인 stdout
 
